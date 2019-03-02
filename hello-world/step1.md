@@ -4,10 +4,8 @@ This is your first step.
 
 This is an _example_ of creating a scenario and running a **command##**
 
-`echo 'Hello Jey..Welcome to Kata coda scenarios'`{{execute}}
+`ip netns add blue`{{execute}}
+`ip netns add red`{{execute}}
+`ovs-vsctl add-br net`{{execute}}
 
-This is another example to execute date command
-
- `date`{{execute}}
- 
- `Vinoth`{{execute}}
+`ip link add tap1 type veth peer name bluetap1`{{execute}}
